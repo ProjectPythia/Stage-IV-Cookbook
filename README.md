@@ -5,7 +5,7 @@
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
-This Project Pythia Cookbook covers errors in Stage IV Precipitation data, specifically with the hour 12Z in the hourly precipitation rates!
+This Project Pythia Cookbook covers errors in Stage IV Precipitation data, specifically with the hour 1200 UTC in the hourly precipitation rates! Please work :) 
 
 ## Motivation
 
