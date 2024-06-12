@@ -1,5 +1,4 @@
-<img src="thumbnail.png" alt="thumbnail" width="300"/>
-
+<<<<<<< kimberly
 # Stage IV Cookbook
 
 [![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
@@ -81,3 +80,4 @@ If you are interested in running this material locally on your computer, you wil
    cd notebooks/
    jupyter lab
    ```
+=======
