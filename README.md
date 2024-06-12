@@ -1,10 +1,10 @@
-# Stage IV Cookbook and Zarr
+# Stage IV Cookbook
 
 [![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
-This Project Pythia Cookbook covers errors in Stage IV Precipitation data, specifically with the hour 1200 UTC in the hourly precipitation rates! Please work :) 
+This Project Pythia Cookbook covers Please work, I beg of you
 
 ## Motivation
 
@@ -12,7 +12,7 @@ This Project Pythia Cookbook covers errors in Stage IV Precipitation data, speci
 
 ## Authors
 
-[Evan Belkin](@evan-belkin), [Marian de Orla-Barile](@mariandob), [Selena Ramos](@Selenaramoswx), [Kimberly Riek](@Kriek21), [Kathryn Rooney](@kathrynrooney)
+[Evan Belkin](http://github.com/evan-belkin), [Marian de Orla-Barile](https://github.com/mariandob), [Selena Ramos](https://github.com/Selenaramoswx), [Kimberly Riek](https://github.com/Kriek21), [Kathryn Rooney](https://github.com/kathrynrooney)
 
 ### Contributors
 
