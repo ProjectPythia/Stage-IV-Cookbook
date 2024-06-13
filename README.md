@@ -16,8 +16,8 @@ Due to its high-resolution grid spacing, Hourly Stage IV Precipitation is a high
 
 ### Contributors
 
-<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
+<a href="https://github.com/ProjectPythia/stage-iv-cookbook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ProjectPythia/stage-iv-cookbook" />
 </a>
 
 ## Structure
