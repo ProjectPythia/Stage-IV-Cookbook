@@ -25,7 +25,7 @@ Through the creation of several plots, including rainfall distribution maps and 
 
 ## Structure
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.) :/
 
 ### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
 
@@ -60,24 +60,23 @@ Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyt
 
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
 
-(Replace "cookbook-example" with the title of your cookbooks)
 
-1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
+1. Clone the `https://github.com/ProjectPythia/Stage-IV-Cookbook` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythia/cookbook-example.git
+    git clone https://github.com/ProjectPythia/Stage-IV-Cookbook.git
    ```
 
-1. Move into the `cookbook-example` directory
+2. Move into the `Stage-IV-Cookbook` directory
    ```bash
-   cd cookbook-example
+   cd Stage-IV-Cookbook
    ```
-1. Create and activate your conda environment from the `environment.yml` file
+3. Create and activate your conda environment from the `environment.yml` file
    ```bash
    conda env create -f environment.yml
-   conda activate cookbook-example
+   conda activate Stage-IV-Cookbook
    ```
-1. Move into the `notebooks` directory and start up Jupyterlab
+4. Move into the `notebooks` directory and start up Jupyterlab
    ```bash
    cd notebooks/
    jupyter lab
