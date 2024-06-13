@@ -15,4 +15,5 @@ dependencies:
   - metpy
   - pyproj
   - seaborn
+  - dask
   - zarr
