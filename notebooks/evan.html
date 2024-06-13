@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Project Pythia Notebook Template &#8212; Project Pythia Cookbook Template</title>
+    <title>Making Plots using Stage IV Data &#8212; Project Pythia Cookbook Template</title>
   
   
   
@@ -77,8 +77,8 @@
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Project Pythia Notebook Template" href="code_stage_iv_marian.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="stage_IV_ida.html" />
+    <link rel="next" title="Selena’s Test!" href="NEW_VERSION.html" />
+    <link rel="prev" title="How to Cite This Cookbook" href="how-to-cite.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="13 June 2024"/>
@@ -370,10 +370,9 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Content</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Ramos.html">Project Pythia Notebook Template</a></li>
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Project Pythia Notebook Template</a></li>
-<li class="toctree-l1"><a class="reference internal" href="code_stage_iv_marian.html">Project Pythia Notebook Template</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Making Plots using Stage IV Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NEW_VERSION.html">Selena’s Test!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code_stage_iv_marian.html"><strong>National Center for Environmental Prediction (NCEP) Stage IV Precipitation: Spatial Averaging</strong></a></li>
 </ul>
 
     </div>
@@ -403,15 +402,14 @@
 <div id="searchbox"></div>
                   <article class="bd-article">
                     
-  <p>COME ON!!!</p>
-<p>Let’s start here! If you can directly link to an image relevant to your notebook, such as <a class="reference external" href="https://github.com/numpy/numpy/blob/main/doc/source/_static/numpylogo.svg">canonical logos</a>, do so here at the top of your notebook. You can do this with Markdown syntax,</p>
+  <p>Let’s start here! If you can directly link to an image relevant to your notebook, such as <a class="reference external" href="https://github.com/numpy/numpy/blob/main/doc/source/_static/numpylogo.svg">canonical logos</a>, do so here at the top of your notebook. You can do this with Markdown syntax,</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">![&lt;image</span> <span class="pre">title&gt;](http://link.com/to/image.png</span> <span class="pre">&quot;image</span> <span class="pre">alt</span> <span class="pre">text&quot;)</span></code></p>
 </div></blockquote>
 <p>or edit this cell to see raw HTML <code class="docutils literal notranslate"><span class="pre">img</span></code> demonstration. This is preferred if you need to shrink your embedded image. <strong>Either way be sure to include <code class="docutils literal notranslate"><span class="pre">alt</span></code> text for any embedded images to make your content more accessible.</strong></p>
 <p><a class="reference internal" href="../_images/ProjectPythia_Logo_Final-01-Blue.svg"><img alt="Project Pythia Logo" src="../_images/ProjectPythia_Logo_Final-01-Blue.svg" width="250" /></a></img></p>
-<section class="tex2jax_ignore mathjax_ignore" id="project-pythia-notebook-template">
-<h1>Project Pythia Notebook Template<a class="headerlink" href="#project-pythia-notebook-template" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="making-plots-using-stage-iv-data">
+<h1>Making Plots using Stage IV Data<a class="headerlink" href="#making-plots-using-stage-iv-data" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
 <p>Next, title your notebook appropriately with a top-level Markdown header, <code class="docutils literal notranslate"><span class="pre">#</span></code>. Do not use this level header anywhere else in the notebook. Our book build process will use this title in the navbar, table of contents, etc. Keep it short, keep it descriptive. Follow this with a <code class="docutils literal notranslate"><span class="pre">---</span></code> cell to visually distinguish the transition to the prerequisites section.</p>
 <hr class="docutils" />
 <section id="overview">
@@ -511,12 +509,14 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">precipitation_data</span><span class="o">.</span><span class="n">sortby</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s1">&#39;2018-01-09 11:00&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">precipitation_data</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s1">&#39;2018-01-09 11:00&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+
+<span class="c1">#precipitation_data.sortby(&#39;time&#39;).sel(time=&#39;2018-01-09 11:00&#39;).plot()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7f08b2aa47d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7fdc57d22190&gt;
 </pre></div>
 </div>
 <img alt="../_images/a4cdf97b296178bc56e5c13fa4430f0fb5b392357ae6f667b00ceb10bddb98d1.png" src="../_images/a4cdf97b296178bc56e5c13fa4430f0fb5b392357ae6f667b00ceb10bddb98d1.png" />
@@ -577,22 +577,6 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/miniconda3/envs/cookbook-dev/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_land.zip
-  warnings.warn(f&#39;Downloading: {url}&#39;, DownloadWarning)
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/miniconda3/envs/cookbook-dev/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_coastline.zip
-  warnings.warn(f&#39;Downloading: {url}&#39;, DownloadWarning)
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/miniconda3/envs/cookbook-dev/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_boundary_lines_land.zip
-  warnings.warn(f&#39;Downloading: {url}&#39;, DownloadWarning)
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/miniconda3/envs/cookbook-dev/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_1_states_provinces_lakes.zip
-  warnings.warn(f&#39;Downloading: {url}&#39;, DownloadWarning)
-</pre></div>
-</div>
 <img alt="../_images/d69c45299699e084c7b14aa8fd71a946697ec6608d069f30364b6c989c436081.png" src="../_images/d69c45299699e084c7b14aa8fd71a946697ec6608d069f30364b6c989c436081.png" />
 </div>
 </div>
@@ -622,22 +606,6 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/miniconda3/envs/cookbook-dev/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_land.zip
-  warnings.warn(f&#39;Downloading: {url}&#39;, DownloadWarning)
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/miniconda3/envs/cookbook-dev/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_coastline.zip
-  warnings.warn(f&#39;Downloading: {url}&#39;, DownloadWarning)
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/miniconda3/envs/cookbook-dev/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_0_boundary_lines_land.zip
-  warnings.warn(f&#39;Downloading: {url}&#39;, DownloadWarning)
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/miniconda3/envs/cookbook-dev/lib/python3.11/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_1_states_provinces_lakes.zip
-  warnings.warn(f&#39;Downloading: {url}&#39;, DownloadWarning)
-</pre></div>
-</div>
 <img alt="../_images/3a39d43c84e3315ec7afbd79f31a2893f058f4c78526f9256df5734edc3b6219.png" src="../_images/3a39d43c84e3315ec7afbd79f31a2893f058f4c78526f9256df5734edc3b6219.png" />
 </div>
 </div>
@@ -668,21 +636,6 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading file &#39;us_counties_20m.cpg&#39; from &#39;https://github.com/Unidata/MetPy/raw/v1.6.2/staticdata/us_counties_20m.cpg&#39; to &#39;/home/runner/.cache/metpy/v1.6.2&#39;.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading file &#39;us_counties_20m.dbf&#39; from &#39;https://github.com/Unidata/MetPy/raw/v1.6.2/staticdata/us_counties_20m.dbf&#39; to &#39;/home/runner/.cache/metpy/v1.6.2&#39;.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading file &#39;us_counties_20m.prj&#39; from &#39;https://github.com/Unidata/MetPy/raw/v1.6.2/staticdata/us_counties_20m.prj&#39; to &#39;/home/runner/.cache/metpy/v1.6.2&#39;.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading file &#39;us_counties_20m.shx&#39; from &#39;https://github.com/Unidata/MetPy/raw/v1.6.2/staticdata/us_counties_20m.shx&#39; to &#39;/home/runner/.cache/metpy/v1.6.2&#39;.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading file &#39;us_counties_20m.shp&#39; from &#39;https://github.com/Unidata/MetPy/raw/v1.6.2/staticdata/us_counties_20m.shp&#39; to &#39;/home/runner/.cache/metpy/v1.6.2&#39;.
-</pre></div>
-</div>
 <img alt="../_images/33eea5fffd21da69e3c671cf326bfdb15c466f56533522976b6374b24ea9e14e.png" src="../_images/33eea5fffd21da69e3c671cf326bfdb15c466f56533522976b6374b24ea9e14e.png" />
 </div>
 </div>
@@ -704,8 +657,8 @@
 <section id="header-levels">
 <h6>header levels<a class="headerlink" href="#header-levels" title="Link to this heading"><i class="fas fa-link"></i></a></h6>
 <p>as well <span class="math notranslate nohighlight">\(m = a * t / h\)</span> text! Similarly, you have access to other <span class="math notranslate nohighlight">\(\LaTeX\)</span> equation <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Typesetting%20Equations.html"><strong>functionality</strong></a> via MathJax (demo below from link),</p>
-<div class="amsmath math notranslate nohighlight" id="equation-974c5331-7bec-4278-9e61-4c6cd4f26ce6">
-<span class="eqno">(2)<a class="headerlink" href="#equation-974c5331-7bec-4278-9e61-4c6cd4f26ce6" title="Permalink to this equation"><i class="fas fa-link"></i></a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5d886e9c-1b8b-4bc9-8523-c117267917cc">
+<span class="eqno">(1)<a class="headerlink" href="#equation-5d886e9c-1b8b-4bc9-8523-c117267917cc" title="Permalink to this equation"><i class="fas fa-link"></i></a></span>\[\begin{align}
 \dot{x} &amp; = \sigma(y-x) \\
 \dot{y} &amp; = \rho x - y - xz \\
 \dot{z} &amp; = -\beta z + xy
@@ -792,20 +745,20 @@
                     
 <div class="prev-next-area">
     <a class="left-prev"
-       href="stage_IV_ida.html"
+       href="how-to-cite.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">How to Cite This Cookbook</p>
       </div>
     </a>
     <a class="right-next"
-       href="code_stage_iv_marian.html"
+       href="NEW_VERSION.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Project Pythia Notebook Template</p>
+        <p class="prev-next-title">Selena’s Test!</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
