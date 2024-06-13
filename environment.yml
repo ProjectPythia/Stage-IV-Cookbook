@@ -17,3 +17,4 @@ dependencies:
   - seaborn
   - dask
   - zarr
+  - python<3.12
