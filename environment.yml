@@ -16,3 +16,4 @@ dependencies:
   - pyproj
   - seaborn
   - zarr
+  - dask
