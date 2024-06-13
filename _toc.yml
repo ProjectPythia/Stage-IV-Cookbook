@@ -6,5 +6,6 @@ parts:
       - file: notebooks/how-to-cite
   - caption: Content
     chapters:
+      - file: notebooks/evan
       - file: notebooks/NEW_VERSION
       - file: notebooks/code_stage_iv_marian
