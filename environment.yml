@@ -5,3 +5,12 @@ dependencies:
   - jupyter-book
   - jupyterlab
   - sphinx-pythia-theme
+  - fsspec
+  - numpy 
+  - xarray
+  - pandas
+  - cartopy
+  - matplotlib
+  - metpy
+  - pyproj
+  - seaborn
