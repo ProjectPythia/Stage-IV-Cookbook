@@ -25,7 +25,7 @@ Through the creation of several plots, including rainfall distribution maps and 
 
 ## Structure
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.) :)
 
 ### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
 
