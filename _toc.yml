@@ -4,6 +4,9 @@ parts:
   - caption: Preamble
     chapters:
       - file: notebooks/how-to-cite
-  - caption: Introduction
+  - caption: Content
     chapters:
-      - file: notebooks/notebook-template
+      - file: notebooks/Ramos
+      - file: notebooks/stage_IV_ida
+      - file: notebooks/evan
+      - file: notebooks/code_stage_iv_marian

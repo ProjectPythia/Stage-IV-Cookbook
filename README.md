@@ -1,12 +1,10 @@
-<img src="thumbnail.png" alt="thumbnail" width="300"/>
-
-# Stage IV Cookbook
+# Stage IV Precipitation Cookbook
 
 [![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
-This Project Pythia Cookbook covers Stage IV Precipitation data analysis that can be employed in a variety of applications. 
+This Project Pythia Cookbook covers Stage IV Precipitation data analysis that can be employed in a variety of applications.
 
 ## Motivation
 The 13 National Weather Service River Forecast Centers (RFCs) analyze multi-sensor precipitation observations from rain gauges, mesonet observations, and radar estimates to create stage IV precipitation analysis data.
@@ -15,16 +13,16 @@ Due to its high-resolution grid spacing, Hourly Stage IV Precipitation is a high
 
 Through the creation of several plots, including rainfall distribution maps and time series, those who follow this cookbook will develope a deeper understanding of trends, patterns, and outliers in Stage IV Precipitation data. The chef can expect to gain experience with packages such as cartopy, metpy, and numpy as well as the pandas dataframe. 
 
-(Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
+Due to its high-resolution grid spacing, Hourly Stage IV Precipitation is a highly beneficial tool for analyzing precipitation observations throughout the contiguous United States. Stage IV data is plotted on a 4 km by 4 km polar-stereographic grid, allowing for identification of discontinuities as a result of the operational process. Upon completion of the cookbook, one will gain experience with packages such as cartopy, metpy, and numpy as well as the pandas dataframe.
 
 ## Authors
 
-[First Author](@first-author), [Second Author](@second-author), etc. _Acknowledge primary content authors here_
+[Evan Belkin](http://github.com/evan-belkin), [Marian de Orla-Barile](https://github.com/mariandob), [Selena Ramos](https://github.com/Selenaramoswx), [Kimberly Riek](https://github.com/Kriek21), [Kathryn Rooney](https://github.com/kathrynrooney)
 
 ### Contributors
 
-<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
+<a href="https://github.com/ProjectPythia/stage-iv-cookbook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ProjectPythia/stage-iv-cookbook" />
 </a>
 
 ## Structure
@@ -86,3 +84,4 @@ If you are interested in running this material locally on your computer, you wil
    cd notebooks/
    jupyter lab
    ```
+=======

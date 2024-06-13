@@ -2,6 +2,19 @@ name: cookbook-dev
 channels:
   - conda-forge
 dependencies:
+  - python<3.12
   - jupyter-book
   - jupyterlab
   - sphinx-pythia-theme
+  - fsspec
+  - s3fs
+  - numpy 
+  - xarray
+  - pandas
+  - cartopy
+  - matplotlib
+  - metpy
+  - pyproj
+  - seaborn
+  - zarr
+  - dask
