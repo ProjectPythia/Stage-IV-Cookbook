@@ -77,7 +77,7 @@
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="stage_IV_ida.html" />
+    <link rel="next" title="Stage IV Ida" href="stage_IV_ida.html" />
     <link rel="prev" title="How to Cite This Cookbook" href="how-to-cite.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -372,6 +372,8 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Project Pythia Notebook Template</a></li>
 
+
+<li class="toctree-l1"><a class="reference internal" href="stage_IV_ida.html">Stage IV Ida</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code_stage_iv_marian.html">Project Pythia Notebook Template</a></li>
 </ul>
 
@@ -530,6 +532,746 @@
                              <span class="n">backend_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;consolidated&#39;</span><span class="p">:</span><span class="kc">True</span><span class="p">},</span> <span class="n">chunks</span><span class="o">=</span><span class="p">{})</span>
 
 <span class="n">precipitation_data</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="s1">&#39;Total_precipitation_surface_1_Hour_Accumulation&#39;</span><span class="p">]</span>
+<span class="n">precipitation_data</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
+<defs>
+<symbol id="icon-database" viewBox="0 0 32 32">
+<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
+<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+</symbol>
+<symbol id="icon-file-text2" viewBox="0 0 32 32">
+<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
+<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+</symbol>
+</defs>
+</svg>
+<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
+ *
+ */
+
+:root {
+  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
+  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
+  --xr-border-color: var(--jp-border-color2, #e0e0e0);
+  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
+  --xr-background-color: var(--jp-layout-color0, white);
+  --xr-background-color-row-even: var(--jp-layout-color1, white);
+  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
+}
+
+html[theme=dark],
+body[data-theme=dark],
+body.vscode-dark {
+  --xr-font-color0: rgba(255, 255, 255, 1);
+  --xr-font-color2: rgba(255, 255, 255, 0.54);
+  --xr-font-color3: rgba(255, 255, 255, 0.38);
+  --xr-border-color: #1F1F1F;
+  --xr-disabled-color: #515151;
+  --xr-background-color: #111111;
+  --xr-background-color-row-even: #111111;
+  --xr-background-color-row-odd: #313131;
+}
+
+.xr-wrap {
+  display: block !important;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.xr-text-repr-fallback {
+  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
+  display: none;
+}
+
+.xr-header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  border-bottom: solid 1px var(--xr-border-color);
+}
+
+.xr-header > div,
+.xr-header > ul {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xr-obj-type,
+.xr-array-name {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.xr-obj-type {
+  color: var(--xr-font-color2);
+}
+
+.xr-sections {
+  padding-left: 0 !important;
+  display: grid;
+  grid-template-columns: 150px auto auto 1fr 20px 20px;
+}
+
+.xr-section-item {
+  display: contents;
+}
+
+.xr-section-item input {
+  display: none;
+}
+
+.xr-section-item input + label {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-item input:enabled + label {
+  cursor: pointer;
+  color: var(--xr-font-color2);
+}
+
+.xr-section-item input:enabled + label:hover {
+  color: var(--xr-font-color0);
+}
+
+.xr-section-summary {
+  grid-column: 1;
+  color: var(--xr-font-color2);
+  font-weight: 500;
+}
+
+.xr-section-summary > span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+.xr-section-summary-in:disabled + label {
+  color: var(--xr-font-color2);
+}
+
+.xr-section-summary-in + label:before {
+  display: inline-block;
+  content: '►';
+  font-size: 11px;
+  width: 15px;
+  text-align: center;
+}
+
+.xr-section-summary-in:disabled + label:before {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-summary-in:checked + label:before {
+  content: '▼';
+}
+
+.xr-section-summary-in:checked + label > span {
+  display: none;
+}
+
+.xr-section-summary,
+.xr-section-inline-details {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.xr-section-inline-details {
+  grid-column: 2 / -1;
+}
+
+.xr-section-details {
+  display: none;
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+.xr-section-summary-in:checked ~ .xr-section-details {
+  display: contents;
+}
+
+.xr-array-wrap {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.xr-array-wrap > label {
+  grid-column: 1;
+  vertical-align: top;
+}
+
+.xr-preview {
+  color: var(--xr-font-color3);
+}
+
+.xr-array-preview,
+.xr-array-data {
+  padding: 0 5px !important;
+  grid-column: 2;
+}
+
+.xr-array-data,
+.xr-array-in:checked ~ .xr-array-preview {
+  display: none;
+}
+
+.xr-array-in:checked ~ .xr-array-data,
+.xr-array-preview {
+  display: inline-block;
+}
+
+.xr-dim-list {
+  display: inline-block !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.xr-dim-list li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.xr-dim-list:before {
+  content: '(';
+}
+
+.xr-dim-list:after {
+  content: ')';
+}
+
+.xr-dim-list li:not(:last-child):after {
+  content: ',';
+  padding-right: 5px;
+}
+
+.xr-has-index {
+  font-weight: bold;
+}
+
+.xr-var-list,
+.xr-var-item {
+  display: contents;
+}
+
+.xr-var-item > div,
+.xr-var-item label,
+.xr-var-item > .xr-var-name span {
+  background-color: var(--xr-background-color-row-even);
+  margin-bottom: 0;
+}
+
+.xr-var-item > .xr-var-name:hover span {
+  padding-right: 5px;
+}
+
+.xr-var-list > li:nth-child(odd) > div,
+.xr-var-list > li:nth-child(odd) > label,
+.xr-var-list > li:nth-child(odd) > .xr-var-name span {
+  background-color: var(--xr-background-color-row-odd);
+}
+
+.xr-var-name {
+  grid-column: 1;
+}
+
+.xr-var-dims {
+  grid-column: 2;
+}
+
+.xr-var-dtype {
+  grid-column: 3;
+  text-align: right;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-preview {
+  grid-column: 4;
+}
+
+.xr-index-preview {
+  grid-column: 2 / 5;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-name,
+.xr-var-dims,
+.xr-var-dtype,
+.xr-preview,
+.xr-attrs dt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.xr-var-name:hover,
+.xr-var-dims:hover,
+.xr-var-dtype:hover,
+.xr-attrs dt:hover {
+  overflow: visible;
+  width: auto;
+  z-index: 1;
+}
+
+.xr-var-attrs,
+.xr-var-data,
+.xr-index-data {
+  display: none;
+  background-color: var(--xr-background-color) !important;
+  padding-bottom: 5px !important;
+}
+
+.xr-var-attrs-in:checked ~ .xr-var-attrs,
+.xr-var-data-in:checked ~ .xr-var-data,
+.xr-index-data-in:checked ~ .xr-index-data {
+  display: block;
+}
+
+.xr-var-data > table {
+  float: right;
+}
+
+.xr-var-name span,
+.xr-var-data,
+.xr-index-name div,
+.xr-index-data,
+.xr-attrs {
+  padding-left: 25px !important;
+}
+
+.xr-attrs,
+.xr-var-attrs,
+.xr-var-data,
+.xr-index-data {
+  grid-column: 1 / -1;
+}
+
+dl.xr-attrs {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 125px auto;
+}
+
+.xr-attrs dt,
+.xr-attrs dd {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  width: auto;
+}
+
+.xr-attrs dt {
+  font-weight: normal;
+  grid-column: 1;
+}
+
+.xr-attrs dt:hover span {
+  display: inline-block;
+  background: var(--xr-background-color);
+  padding-right: 10px;
+}
+
+.xr-attrs dd {
+  grid-column: 2;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.xr-icon-database,
+.xr-icon-file-text2,
+.xr-no-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1.5em !important;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;Total_precipitation_surface_1_Hour_Accumulation&#x27; (
+                                                                     time: 191948,
+                                                                     y: 881,
+                                                                     x: 1121)&gt; Size: 758GB
+dask.array&lt;open_dataset-Total_precipitation_surface_1_Hour_Accumulation, shape=(191948, 881, 1121), dtype=float32, chunksize=(1597, 80, 102), chunktype=numpy.ndarray&gt;
+Coordinates:
+    lat      (x, y) float32 4MB dask.array&lt;chunksize=(102, 80), meta=np.ndarray&gt;
+    lon      (x, y) float32 4MB dask.array&lt;chunksize=(102, 80), meta=np.ndarray&gt;
+  * time     (time) datetime64[ns] 2MB 2002-01-01 ... 2023-11-30T23:00:00
+Dimensions without coordinates: y, x
+Attributes:
+    cell_methods:   time: sum (interval: 1 hr)
+    description:    Total precipitation
+    grid_mapping:   crs: lat lon
+    long_name:      Total precipitation (1_Hour Accumulation) @ Ground or wat...
+    standard_name:  precipitation_amount
+    units:          kg m^-2</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'Total_precipitation_surface_1_Hour_Accumulation'</div><ul class='xr-dim-list'><li><span class='xr-has-index'>time</span>: 191948</li><li><span>y</span>: 881</li><li><span>x</span>: 1121</li></ul></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-deb5146b-cbc8-49e6-a784-ffaa7ca7d33a' class='xr-array-in' type='checkbox' checked><label for='section-deb5146b-cbc8-49e6-a784-ffaa7ca7d33a' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>dask.array&lt;chunksize=(1597, 80, 102), meta=np.ndarray&gt;</span></div><div class='xr-array-data'><table>
+    <tr>
+        <td>
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <td> </td>
+                        <th> Array </th>
+                        <th> Chunk </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <th> Bytes </th>
+                        <td> 706.20 GiB </td>
+                        <td> 49.71 MiB </td>
+                    </tr>
+                    
+                    <tr>
+                        <th> Shape </th>
+                        <td> (191948, 881, 1121) </td>
+                        <td> (1597, 80, 102) </td>
+                    </tr>
+                    <tr>
+                        <th> Dask graph </th>
+                        <td colspan="2"> 15972 chunks in 2 graph layers </td>
+                    </tr>
+                    <tr>
+                        <th> Data type </th>
+                        <td colspan="2"> float32 numpy.ndarray </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td>
+        <svg width="156" height="146" style="stroke:rgb(0,0,0);stroke-width:1" >
+
+  <!-- Horizontal lines -->
+  <line x1="10" y1="0" x2="80" y2="70" style="stroke-width:2" />
+  <line x1="10" y1="2" x2="80" y2="72" />
+  <line x1="10" y1="4" x2="80" y2="75" />
+  <line x1="10" y1="6" x2="80" y2="77" />
+  <line x1="10" y1="9" x2="80" y2="79" />
+  <line x1="10" y1="11" x2="80" y2="82" />
+  <line x1="10" y1="13" x2="80" y2="84" />
+  <line x1="10" y1="16" x2="80" y2="86" />
+  <line x1="10" y1="18" x2="80" y2="89" />
+  <line x1="10" y1="20" x2="80" y2="91" />
+  <line x1="10" y1="23" x2="80" y2="93" />
+  <line x1="10" y1="25" x2="80" y2="95" />
+  <line x1="10" y1="25" x2="80" y2="96" style="stroke-width:2" />
+
+  <!-- Vertical lines -->
+  <line x1="10" y1="0" x2="10" y2="25" style="stroke-width:2" />
+  <line x1="13" y1="3" x2="13" y2="28" />
+  <line x1="17" y1="7" x2="17" y2="32" />
+  <line x1="21" y1="11" x2="21" y2="36" />
+  <line x1="24" y1="14" x2="24" y2="40" />
+  <line x1="28" y1="18" x2="28" y2="43" />
+  <line x1="32" y1="22" x2="32" y2="47" />
+  <line x1="35" y1="25" x2="35" y2="51" />
+  <line x1="39" y1="29" x2="39" y2="54" />
+  <line x1="43" y1="33" x2="43" y2="58" />
+  <line x1="46" y1="36" x2="46" y2="62" />
+  <line x1="51" y1="41" x2="51" y2="66" />
+  <line x1="54" y1="44" x2="54" y2="70" />
+  <line x1="58" y1="48" x2="58" y2="73" />
+  <line x1="62" y1="52" x2="62" y2="77" />
+  <line x1="65" y1="55" x2="65" y2="81" />
+  <line x1="69" y1="59" x2="69" y2="84" />
+  <line x1="73" y1="63" x2="73" y2="88" />
+  <line x1="76" y1="66" x2="76" y2="92" />
+  <line x1="80" y1="70" x2="80" y2="96" style="stroke-width:2" />
+
+  <!-- Colored Rectangle -->
+  <polygon points="10.0,0.0 80.58823529411765,70.58823529411765 80.58823529411765,96.00085180870013 10.0,25.41261651458248" style="fill:#8B4903A0;stroke-width:0"/>
+
+  <!-- Horizontal lines -->
+  <line x1="10" y1="0" x2="35" y2="0" style="stroke-width:2" />
+  <line x1="13" y1="3" x2="38" y2="3" />
+  <line x1="17" y1="7" x2="42" y2="7" />
+  <line x1="21" y1="11" x2="46" y2="11" />
+  <line x1="24" y1="14" x2="50" y2="14" />
+  <line x1="28" y1="18" x2="53" y2="18" />
+  <line x1="32" y1="22" x2="57" y2="22" />
+  <line x1="35" y1="25" x2="61" y2="25" />
+  <line x1="39" y1="29" x2="64" y2="29" />
+  <line x1="43" y1="33" x2="68" y2="33" />
+  <line x1="46" y1="36" x2="72" y2="36" />
+  <line x1="51" y1="41" x2="76" y2="41" />
+  <line x1="54" y1="44" x2="80" y2="44" />
+  <line x1="58" y1="48" x2="83" y2="48" />
+  <line x1="62" y1="52" x2="87" y2="52" />
+  <line x1="65" y1="55" x2="91" y2="55" />
+  <line x1="69" y1="59" x2="94" y2="59" />
+  <line x1="73" y1="63" x2="98" y2="63" />
+  <line x1="76" y1="66" x2="102" y2="66" />
+  <line x1="80" y1="70" x2="106" y2="70" style="stroke-width:2" />
+
+  <!-- Vertical lines -->
+  <line x1="10" y1="0" x2="80" y2="70" style="stroke-width:2" />
+  <line x1="12" y1="0" x2="82" y2="70" />
+  <line x1="14" y1="0" x2="85" y2="70" />
+  <line x1="16" y1="0" x2="87" y2="70" />
+  <line x1="19" y1="0" x2="89" y2="70" />
+  <line x1="21" y1="0" x2="92" y2="70" />
+  <line x1="23" y1="0" x2="94" y2="70" />
+  <line x1="26" y1="0" x2="96" y2="70" />
+  <line x1="28" y1="0" x2="99" y2="70" />
+  <line x1="30" y1="0" x2="101" y2="70" />
+  <line x1="33" y1="0" x2="103" y2="70" />
+  <line x1="35" y1="0" x2="106" y2="70" style="stroke-width:2" />
+
+  <!-- Colored Rectangle -->
+  <polygon points="10.0,0.0 35.41261651458248,0.0 106.00085180870013,70.58823529411765 80.58823529411765,70.58823529411765" style="fill:#8B4903A0;stroke-width:0"/>
+
+  <!-- Horizontal lines -->
+  <line x1="80" y1="70" x2="106" y2="70" style="stroke-width:2" />
+  <line x1="80" y1="72" x2="106" y2="72" />
+  <line x1="80" y1="75" x2="106" y2="75" />
+  <line x1="80" y1="77" x2="106" y2="77" />
+  <line x1="80" y1="79" x2="106" y2="79" />
+  <line x1="80" y1="82" x2="106" y2="82" />
+  <line x1="80" y1="84" x2="106" y2="84" />
+  <line x1="80" y1="86" x2="106" y2="86" />
+  <line x1="80" y1="89" x2="106" y2="89" />
+  <line x1="80" y1="91" x2="106" y2="91" />
+  <line x1="80" y1="93" x2="106" y2="93" />
+  <line x1="80" y1="95" x2="106" y2="95" />
+  <line x1="80" y1="96" x2="106" y2="96" style="stroke-width:2" />
+
+  <!-- Vertical lines -->
+  <line x1="80" y1="70" x2="80" y2="96" style="stroke-width:2" />
+  <line x1="82" y1="70" x2="82" y2="96" />
+  <line x1="85" y1="70" x2="85" y2="96" />
+  <line x1="87" y1="70" x2="87" y2="96" />
+  <line x1="89" y1="70" x2="89" y2="96" />
+  <line x1="92" y1="70" x2="92" y2="96" />
+  <line x1="94" y1="70" x2="94" y2="96" />
+  <line x1="96" y1="70" x2="96" y2="96" />
+  <line x1="99" y1="70" x2="99" y2="96" />
+  <line x1="101" y1="70" x2="101" y2="96" />
+  <line x1="103" y1="70" x2="103" y2="96" />
+  <line x1="106" y1="70" x2="106" y2="96" style="stroke-width:2" />
+
+  <!-- Colored Rectangle -->
+  <polygon points="80.58823529411765,70.58823529411765 106.00085180870013,70.58823529411765 106.00085180870013,96.00085180870013 80.58823529411765,96.00085180870013" style="fill:#ECB172A0;stroke-width:0"/>
+
+  <!-- Text -->
+  <text x="93.294544" y="116.000852" font-size="1.0rem" font-weight="100" text-anchor="middle" >1121</text>
+  <text x="126.000852" y="83.294544" font-size="1.0rem" font-weight="100" text-anchor="middle" transform="rotate(-90,126.000852,83.294544)">881</text>
+  <text x="35.294118" y="80.706734" font-size="1.0rem" font-weight="100" text-anchor="middle" transform="rotate(45,35.294118,80.706734)">191948</text>
+</svg>
+        </td>
+    </tr>
+</table></div></div></li><li class='xr-section-item'><input id='section-78d89fae-ffee-4ac9-a1dd-f9ff6eadb056' class='xr-section-summary-in' type='checkbox'  checked><label for='section-78d89fae-ffee-4ac9-a1dd-f9ff6eadb056' class='xr-section-summary' >Coordinates: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lat</span></div><div class='xr-var-dims'>(x, y)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(102, 80), meta=np.ndarray&gt;</div><input id='attrs-1c67e2b8-707a-46d3-8fd4-facf608ef437' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-1c67e2b8-707a-46d3-8fd4-facf608ef437' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0b536975-0f24-4217-9feb-b79b879de310' class='xr-var-data-in' type='checkbox'><label for='data-0b536975-0f24-4217-9feb-b79b879de310' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_north</dd></dl></div><div class='xr-var-data'><table>
+    <tr>
+        <td>
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <td> </td>
+                        <th> Array </th>
+                        <th> Chunk </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <th> Bytes </th>
+                        <td> 3.77 MiB </td>
+                        <td> 31.88 kiB </td>
+                    </tr>
+                    
+                    <tr>
+                        <th> Shape </th>
+                        <td> (1121, 881) </td>
+                        <td> (102, 80) </td>
+                    </tr>
+                    <tr>
+                        <th> Dask graph </th>
+                        <td colspan="2"> 132 chunks in 2 graph layers </td>
+                    </tr>
+                    <tr>
+                        <th> Data type </th>
+                        <td colspan="2"> float32 numpy.ndarray </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td>
+        <svg width="144" height="170" style="stroke:rgb(0,0,0);stroke-width:1" >
+
+  <!-- Horizontal lines -->
+  <line x1="0" y1="0" x2="94" y2="0" style="stroke-width:2" />
+  <line x1="0" y1="10" x2="94" y2="10" />
+  <line x1="0" y1="21" x2="94" y2="21" />
+  <line x1="0" y1="32" x2="94" y2="32" />
+  <line x1="0" y1="43" x2="94" y2="43" />
+  <line x1="0" y1="54" x2="94" y2="54" />
+  <line x1="0" y1="65" x2="94" y2="65" />
+  <line x1="0" y1="76" x2="94" y2="76" />
+  <line x1="0" y1="87" x2="94" y2="87" />
+  <line x1="0" y1="98" x2="94" y2="98" />
+  <line x1="0" y1="109" x2="94" y2="109" />
+  <line x1="0" y1="120" x2="94" y2="120" style="stroke-width:2" />
+
+  <!-- Vertical lines -->
+  <line x1="0" y1="0" x2="0" y2="120" style="stroke-width:2" />
+  <line x1="8" y1="0" x2="8" y2="120" />
+  <line x1="17" y1="0" x2="17" y2="120" />
+  <line x1="25" y1="0" x2="25" y2="120" />
+  <line x1="34" y1="0" x2="34" y2="120" />
+  <line x1="42" y1="0" x2="42" y2="120" />
+  <line x1="51" y1="0" x2="51" y2="120" />
+  <line x1="59" y1="0" x2="59" y2="120" />
+  <line x1="68" y1="0" x2="68" y2="120" />
+  <line x1="77" y1="0" x2="77" y2="120" />
+  <line x1="85" y1="0" x2="85" y2="120" />
+  <line x1="94" y1="0" x2="94" y2="120" />
+  <line x1="94" y1="0" x2="94" y2="120" style="stroke-width:2" />
+
+  <!-- Colored Rectangle -->
+  <polygon points="0.0,0.0 94.30865298840321,0.0 94.30865298840321,120.0 0.0,120.0" style="fill:#ECB172A0;stroke-width:0"/>
+
+  <!-- Text -->
+  <text x="47.154326" y="140.000000" font-size="1.0rem" font-weight="100" text-anchor="middle" >881</text>
+  <text x="114.308653" y="60.000000" font-size="1.0rem" font-weight="100" text-anchor="middle" transform="rotate(-90,114.308653,60.000000)">1121</text>
+</svg>
+        </td>
+    </tr>
+</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>lon</span></div><div class='xr-var-dims'>(x, y)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(102, 80), meta=np.ndarray&gt;</div><input id='attrs-f48dcd82-fe71-4488-9e5c-ee6f18691d89' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f48dcd82-fe71-4488-9e5c-ee6f18691d89' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-c3b8b5cf-af2c-443a-a04e-a111d0c8e467' class='xr-var-data-in' type='checkbox'><label for='data-c3b8b5cf-af2c-443a-a04e-a111d0c8e467' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>units :</span></dt><dd>degrees_east</dd></dl></div><div class='xr-var-data'><table>
+    <tr>
+        <td>
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <td> </td>
+                        <th> Array </th>
+                        <th> Chunk </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <th> Bytes </th>
+                        <td> 3.77 MiB </td>
+                        <td> 31.88 kiB </td>
+                    </tr>
+                    
+                    <tr>
+                        <th> Shape </th>
+                        <td> (1121, 881) </td>
+                        <td> (102, 80) </td>
+                    </tr>
+                    <tr>
+                        <th> Dask graph </th>
+                        <td colspan="2"> 132 chunks in 2 graph layers </td>
+                    </tr>
+                    <tr>
+                        <th> Data type </th>
+                        <td colspan="2"> float32 numpy.ndarray </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td>
+        <svg width="144" height="170" style="stroke:rgb(0,0,0);stroke-width:1" >
+
+  <!-- Horizontal lines -->
+  <line x1="0" y1="0" x2="94" y2="0" style="stroke-width:2" />
+  <line x1="0" y1="10" x2="94" y2="10" />
+  <line x1="0" y1="21" x2="94" y2="21" />
+  <line x1="0" y1="32" x2="94" y2="32" />
+  <line x1="0" y1="43" x2="94" y2="43" />
+  <line x1="0" y1="54" x2="94" y2="54" />
+  <line x1="0" y1="65" x2="94" y2="65" />
+  <line x1="0" y1="76" x2="94" y2="76" />
+  <line x1="0" y1="87" x2="94" y2="87" />
+  <line x1="0" y1="98" x2="94" y2="98" />
+  <line x1="0" y1="109" x2="94" y2="109" />
+  <line x1="0" y1="120" x2="94" y2="120" style="stroke-width:2" />
+
+  <!-- Vertical lines -->
+  <line x1="0" y1="0" x2="0" y2="120" style="stroke-width:2" />
+  <line x1="8" y1="0" x2="8" y2="120" />
+  <line x1="17" y1="0" x2="17" y2="120" />
+  <line x1="25" y1="0" x2="25" y2="120" />
+  <line x1="34" y1="0" x2="34" y2="120" />
+  <line x1="42" y1="0" x2="42" y2="120" />
+  <line x1="51" y1="0" x2="51" y2="120" />
+  <line x1="59" y1="0" x2="59" y2="120" />
+  <line x1="68" y1="0" x2="68" y2="120" />
+  <line x1="77" y1="0" x2="77" y2="120" />
+  <line x1="85" y1="0" x2="85" y2="120" />
+  <line x1="94" y1="0" x2="94" y2="120" />
+  <line x1="94" y1="0" x2="94" y2="120" style="stroke-width:2" />
+
+  <!-- Colored Rectangle -->
+  <polygon points="0.0,0.0 94.30865298840321,0.0 94.30865298840321,120.0 0.0,120.0" style="fill:#ECB172A0;stroke-width:0"/>
+
+  <!-- Text -->
+  <text x="47.154326" y="140.000000" font-size="1.0rem" font-weight="100" text-anchor="middle" >881</text>
+  <text x="114.308653" y="60.000000" font-size="1.0rem" font-weight="100" text-anchor="middle" transform="rotate(-90,114.308653,60.000000)">1121</text>
+</svg>
+        </td>
+    </tr>
+</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>time</span></div><div class='xr-var-dims'>(time)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2002-01-01 ... 2023-11-30T23:00:00</div><input id='attrs-498b2102-8793-4433-a9c0-5d8bfd7aa83c' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-498b2102-8793-4433-a9c0-5d8bfd7aa83c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-15fe96a7-2e1d-46eb-a88b-b82df61f7a4d' class='xr-var-data-in' type='checkbox'><label for='data-15fe96a7-2e1d-46eb-a88b-b82df61f7a4d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>bounds :</span></dt><dd>time_bounds</dd><dt><span>long_name :</span></dt><dd>GRIB forecast or observation time</dd><dt><span>standard_name :</span></dt><dd>time</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;2002-01-01T00:00:00.000000000&#x27;, &#x27;2002-01-01T01:00:00.000000000&#x27;,
+       &#x27;2002-01-01T02:00:00.000000000&#x27;, ..., &#x27;2023-11-30T21:00:00.000000000&#x27;,
+       &#x27;2023-11-30T22:00:00.000000000&#x27;, &#x27;2023-11-30T23:00:00.000000000&#x27;],
+      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-367ba722-3000-40b7-994f-6b93abb33592' class='xr-section-summary-in' type='checkbox'  ><label for='section-367ba722-3000-40b7-994f-6b93abb33592' class='xr-section-summary' >Indexes: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-index-name'><div>time</div></div><div class='xr-index-preview'>PandasIndex</div><div></div><input id='index-5c883bb8-ac81-441b-80bb-169cfc799aa6' class='xr-index-data-in' type='checkbox'/><label for='index-5c883bb8-ac81-441b-80bb-169cfc799aa6' title='Show/Hide index repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-index-data'><pre>PandasIndex(DatetimeIndex([&#x27;2002-01-01 00:00:00&#x27;, &#x27;2002-01-01 01:00:00&#x27;,
+               &#x27;2002-01-01 02:00:00&#x27;, &#x27;2002-01-01 03:00:00&#x27;,
+               &#x27;2002-01-01 04:00:00&#x27;, &#x27;2002-01-01 05:00:00&#x27;,
+               &#x27;2002-01-01 06:00:00&#x27;, &#x27;2002-01-01 07:00:00&#x27;,
+               &#x27;2002-01-01 08:00:00&#x27;, &#x27;2002-01-01 09:00:00&#x27;,
+               ...
+               &#x27;2023-11-30 14:00:00&#x27;, &#x27;2023-11-30 15:00:00&#x27;,
+               &#x27;2023-11-30 16:00:00&#x27;, &#x27;2023-11-30 17:00:00&#x27;,
+               &#x27;2023-11-30 18:00:00&#x27;, &#x27;2023-11-30 19:00:00&#x27;,
+               &#x27;2023-11-30 20:00:00&#x27;, &#x27;2023-11-30 21:00:00&#x27;,
+               &#x27;2023-11-30 22:00:00&#x27;, &#x27;2023-11-30 23:00:00&#x27;],
+              dtype=&#x27;datetime64[ns]&#x27;, name=&#x27;time&#x27;, length=191948, freq=None))</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-6a1f83c3-5a0b-41b3-91f0-98a9e03bfed4' class='xr-section-summary-in' type='checkbox'  checked><label for='section-6a1f83c3-5a0b-41b3-91f0-98a9e03bfed4' class='xr-section-summary' >Attributes: <span>(6)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>cell_methods :</span></dt><dd>time: sum (interval: 1 hr)</dd><dt><span>description :</span></dt><dd>Total precipitation</dd><dt><span>grid_mapping :</span></dt><dd>crs: lat lon</dd><dt><span>long_name :</span></dt><dd>Total precipitation (1_Hour Accumulation) @ Ground or water surface</dd><dt><span>standard_name :</span></dt><dd>precipitation_amount</dd><dt><span>units :</span></dt><dd>kg m^-2</dd></dl></div></li></ul></div></div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">start_time</span> <span class="o">=</span> <span class="s1">&#39;2018-01-09 11:00&#39;</span>
+<span class="n">end_time</span> <span class="o">=</span> <span class="s1">&#39;2018-01-09 11:00&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">precipitation_data</span><span class="o">.</span><span class="n">sortby</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="n">start_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">))</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.QuadMesh at 0x7f2e6d14b650&gt;
+</pre></div>
+</div>
+<img alt="../_images/a4cdf97b296178bc56e5c13fa4430f0fb5b392357ae6f667b00ceb10bddb98d1.png" src="../_images/a4cdf97b296178bc56e5c13fa4430f0fb5b392357ae6f667b00ceb10bddb98d1.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="this-basic-plot-show-that-the-x-y-grid-points-and-the-units-km-m-2">
+<h1>This basic plot show that the x,y grid points and the units km/m^-2<a class="headerlink" href="#this-basic-plot-show-that-the-x-y-grid-points-and-the-units-km-m-2" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hello
 </pre></div>
 </div>
 </div>
@@ -550,8 +1292,8 @@
 <section id="header-levels">
 <h6>header levels<a class="headerlink" href="#header-levels" title="Link to this heading"><i class="fas fa-link"></i></a></h6>
 <p>as well <span class="math notranslate nohighlight">\(m = a * t / h\)</span> text! Similarly, you have access to other <span class="math notranslate nohighlight">\(\LaTeX\)</span> equation <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Typesetting%20Equations.html"><strong>functionality</strong></a> via MathJax (demo below from link),</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3b77422c-4ad6-4a9e-bbfd-479a88079306">
-<span class="eqno">(1)<a class="headerlink" href="#equation-3b77422c-4ad6-4a9e-bbfd-479a88079306" title="Permalink to this equation"><i class="fas fa-link"></i></a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-78756483-e272-4ff2-bc8c-1bdbe51c6450">
+<span class="eqno">(1)<a class="headerlink" href="#equation-78756483-e272-4ff2-bc8c-1bdbe51c6450" title="Permalink to this equation"><i class="fas fa-link"></i></a></span>\[\begin{align}
 \dot{x} &amp; = \sigma(y-x) \\
 \dot{y} &amp; = \rho x - y - xz \\
 \dot{z} &amp; = -\beta z + xy
@@ -651,7 +1393,7 @@
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Stage IV Ida</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -682,7 +1424,8 @@
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-code-to-work-with">The code to work with</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-code-to-work-with">The code to work with</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#this-basic-plot-show-that-the-x-y-grid-points-and-the-units-km-m-2">This basic plot show that the x,y grid points and the units km/m^-2</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#another-content-subsection">Another content subsection</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#your-second-content-section">Your second content section</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subsection-to-the-second-section">Subsection to the second section</a><ul class="nav section-nav flex-column">
