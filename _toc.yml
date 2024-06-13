@@ -4,6 +4,7 @@ parts:
   - caption: Preamble
     chapters:
       - file: notebooks/how-to-cite
-  - caption: Introduction
+  - caption: Content
     chapters:
-      - file: notebooks/notebook-template
+      - file: notebooks/NEW_VERSION
+      - file: notebooks/code_stage_iv_marian
