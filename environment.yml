@@ -6,6 +6,7 @@ dependencies:
   - jupyterlab
   - sphinx-pythia-theme
   - fsspec
+  - s3fs
   - numpy 
   - xarray
   - pandas
@@ -14,3 +15,4 @@ dependencies:
   - metpy
   - pyproj
   - seaborn
+  
