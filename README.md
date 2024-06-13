@@ -13,8 +13,6 @@ Due to its high-resolution grid spacing, Hourly Stage IV Precipitation is a high
 
 Through the creation of several plots, including rainfall distribution maps and time series, those who follow this cookbook will develope a deeper understanding of trends, patterns, and outliers in Stage IV Precipitation data. The chef can expect to gain experience with packages such as cartopy, metpy, and numpy as well as the pandas dataframe. 
 
-Due to its high-resolution grid spacing, Hourly Stage IV Precipitation is a highly beneficial tool for analyzing precipitation observations throughout the contiguous United States. Stage IV data is plotted on a 4 km by 4 km polar-stereographic grid, allowing for identification of discontinuities as a result of the operational process. Upon completion of the cookbook, one will gain experience with packages such as cartopy, metpy, and numpy as well as the pandas dataframe.
-
 ## Authors
 
 [Evan Belkin](http://github.com/evan-belkin), [Marian de Orla-Barile](https://github.com/mariandob), [Selena Ramos](https://github.com/Selenaramoswx), [Kimberly Riek](https://github.com/Kriek21), [Kathryn Rooney](https://github.com/kathrynrooney)
@@ -63,22 +61,22 @@ Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyt
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
 
 
-1. Clone the `https://github.com/ProjectPythia/`Stage-IV-Cookbook repository:
+1. Clone the `https://github.com/ProjectPythia/Stage-IV-Cookbook` repository:
 
    ```bash
     git clone https://github.com/ProjectPythia/Stage-IV-Cookbook.git
    ```
 
-1. Move into the `Stage-IV-Cookbook` directory
+2. Move into the `Stage-IV-Cookbook` directory
    ```bash
    cd Stage-IV-Cookbook
    ```
-1. Create and activate your conda environment from the `environment.yml` file
+3. Create and activate your conda environment from the `environment.yml` file
    ```bash
    conda env create -f environment.yml
    conda activate Stage-IV-Cookbook
    ```
-1. Move into the `notebooks` directory and start up Jupyterlab
+4. Move into the `notebooks` directory and start up Jupyterlab
    ```bash
    cd notebooks/
    jupyter lab
