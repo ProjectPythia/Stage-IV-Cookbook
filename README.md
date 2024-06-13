@@ -8,7 +8,7 @@ This Project Pythia Cookbook covers Stage IV Precipitation data analysis that ca
 
 ## Motivation
 
-Due to its high-resolution grid spacing, Hourly Stage IV Precipitation is a highly beneficial tool for analyzing precipitation observations throughout the contiguous United States. Stage IV data is plotted on a 4 km by 4 km polar-stereographic grid, allowing for identification of discontinuities as a result of the operational process. Upon completion of the cookbook, one will gain experience with packages such as cartopy, metpy, and numpy as well as a pandas dataframe.
+Due to its high-resolution grid spacing, Hourly Stage IV Precipitation is a highly beneficial tool for analyzing precipitation observations throughout the contiguous United States. Stage IV data is plotted on a 4 km by 4 km polar-stereographic grid, allowing for identification of discontinuities as a result of the operational process. Upon completion of the cookbook, one will gain experience with packages such as cartopy, metpy, and numpy as well as a pandas dataframe, yo!.
 
 ## Authors
 
