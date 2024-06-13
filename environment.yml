@@ -6,4 +6,15 @@ dependencies:
   - jupyter-book
   - jupyterlab
   - sphinx-pythia-theme
-
+  - fsspec
+  - s3fs
+  - numpy 
+  - xarray
+  - pandas
+  - cartopy
+  - matplotlib
+  - metpy
+  - pyproj
+  - seaborn
+  - zarr
+  - dask
