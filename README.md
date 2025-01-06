@@ -9,13 +9,11 @@ This Project Pythia Cookbook covers Stage IV Precipitation data analysis that ca
 ## Motivation
 The 13 National Weather Service River Forecast Centers (RFCs) analyze multi-sensor precipitation observations from rain gauges, mesonet observations, and radar estimates to create stage IV precipitation analysis data.
 
-Due to its high-resolution grid spacing, Hourly Stage IV Precipitation is a highly beneficial tool for analyzing precipitation observations throughout the contiguous United States. Stage IV data is plotted on a 4 km by 4 km polar-stereographic grid, allowing for identification of discontinuities as a result of the operational process. Through the creation of several plots, including rainfall distribution maps and time series, those who follow this cookbook will develope a deeper understanding of trends, patterns, and outliers in Stage IV Precipitation data. 
-
-Through the creation of several plots, including rainfall distribution maps and time series, those who follow this cookbook will develope a deeper understanding of trends, patterns, and outliers in Stage IV Precipitation data. The chef can expect to gain experience with packages such as cartopy, metpy, and numpy as well as the pandas dataframe. 
+Due to its high-resolution grid spacing, hourly Stage IV Precipitation is a highly beneficial tool for analyzing precipitation observations throughout the contiguous United States. Stage IV data is plotted on a 4 km by 4 km polar-stereographic grid, allowing for identification of discontinuities as a result of the operational process. Through walking through several notebooks, including rainfall distribution maps and time series (to come soon), those who follow this cookbook will develop a deeper understanding how to create publication-quality plots using Stage IV Precipitation data. 
 
 ## Authors
 
-[Evan Belkin](http://github.com/evan-belkin), [Marian de Orla-Barile](https://github.com/mariandob), [Selena Ramos](https://github.com/Selenaramoswx), [Kimberly Riek](https://github.com/Kriek21), [Kathryn Rooney](https://github.com/kathrynrooney)
+[Evan Belkin](http://github.com/evan-belkin), [Marian de Orla-Barile](https://github.com/mariandob), [Selena Ramos](https://github.com/Selenaramoswx), [Kimberly Riek](https://github.com/Kriek21), [Kathryn Rooney](https://github.com/kathrynrooney), [Kevin Tyle](https://github.com/ktyle),
 
 ### Contributors
 
@@ -25,15 +23,15 @@ Through the creation of several plots, including rainfall distribution maps and 
 
 ## Structure
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+Please go through Notebook #1. Additional notebooks will be available soon! 
 
-### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+### Notebook #1: Plotting Stage IV Precipitation Data from the National Center for Environmental Prediction (NCEP), Housed in Zarr Format by the United States Geological Survey (USGS)
 
-(Add content for this section, e.g., "The foundational content includes ... ")
+This notebook will walk you through creating publicaiton-quaulity plots of the Stage IV precipitation data during a high-impact east coast Atmospheric River event.
 
-### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
+### Additional Notebooks Coming Soon! 
 
-(Add content for this section, e.g., "Example workflows include ... ")
+These notebooks will include extracting precipitation data at a single grid point to create time series and performing a spatial average of the data over a smaller domain. We aim to publish these notebooks by the end of June 2025.
 
 ## Running the Notebooks
 
@@ -60,24 +58,23 @@ Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyt
 
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
 
-(Replace "cookbook-example" with the title of your cookbooks)
 
-1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
+1. Clone the `https://github.com/ProjectPythia/Stage-IV-Cookbook` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythia/cookbook-example.git
+    git clone https://github.com/ProjectPythia/Stage-IV-Cookbook.git
    ```
 
-1. Move into the `cookbook-example` directory
+2. Move into the `Stage-IV-Cookbook` directory
    ```bash
-   cd cookbook-example
+   cd Stage-IV-Cookbook
    ```
-1. Create and activate your conda environment from the `environment.yml` file
+3. Create and activate your conda environment from the `environment.yml` file
    ```bash
    conda env create -f environment.yml
-   conda activate cookbook-example
+   conda activate Stage-IV-Cookbook
    ```
-1. Move into the `notebooks` directory and start up Jupyterlab
+4. Move into the `notebooks` directory and start up Jupyterlab
    ```bash
    cd notebooks/
    jupyter lab
